@@ -37,6 +37,10 @@ ol {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1440;
   max-width: 1158px;
@@ -44,6 +48,19 @@ ol {
   padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid #ff0000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list {
@@ -55,8 +72,6 @@ ol {
 
 .header {
   background-color: var(--white-background);
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid var(--accent);
   background: var(--white-background);
 }
@@ -70,6 +85,7 @@ ol {
 .header-menu-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .header-soc-list {
@@ -95,6 +111,11 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.logo link {
+  display: block;
+  margin-right: 76px;
 }
 
 .logo-header {
@@ -146,9 +167,6 @@ ol {
   padding-left: auto;
 }
 
-.hero-wrap {
-}
-
 .hero-title {
   color: var(--white-background);
   text-align: center;
@@ -157,9 +175,11 @@ ol {
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
+  min-width: 496px;
 }
 
 .hero-btn {
+  display: block;
   color: var(--white-background);
   background-color: var(--primary-brand);
   font-family: inherit;
@@ -171,8 +191,11 @@ ol {
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
+  border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px #00000026;
+  min-width: 169px;
+  height: 56px;
 }
 
 .hero-btn:hover,
@@ -194,8 +217,8 @@ ol {
 .advantages-item {
   width: calc((100% - 3 * 24px) / 4);
 }
-.adventges-text {
-  margin-top: 8px;
+.advantages-title {
+  margin-bottom: 8px;
 }
 
 .section-title {
@@ -236,12 +259,12 @@ ol {
 .we-doing-list {
   display: flex;
   gap: 24px;
-  width: calc((100% - 2 * 24px) / 3);
 }
 
 .we-doing-item {
   border: 1px solid var(--accent);
   background: url(<path-to-image>), #d3d3d3 50% / cover no-repeat;
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .team {
@@ -267,16 +290,21 @@ ol {
   background: var(--white-background);
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 1px 6px 0px #2e2f4214;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  padding-bottom: 32px;
   flex-shrink: 0;
+  width: calc((100 - 72px) / 4);
+}
+
+.team-card-text {
+  padding: 32px 0;
 }
 
 .team-subtitle {
   margin-bottom: 8px;
-  margin-top: 32px;
+  text-align: center;
+}
+.team-text {
+text-align: center;
 }
 
 .footer {
@@ -285,13 +313,21 @@ ol {
   padding-bottom: 100px;
 }
 
+.footer-wrap {
+  padding: 100px o;
+}
+
+.footer-link {
+display: inline-block;
+margin-bottom: 16px;
+}
+
 .footer-text {
   color: var(--light);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 17.5px;
 }
 
 .portfolio {
@@ -326,6 +362,7 @@ ol {
 .portf-filtr-btn:focus {
   color: var(--white-background);
   background-color: var(--pressed-state);
+  border: 1px solid transparent;
 }
 
 .portf-list {
@@ -339,18 +376,16 @@ ol {
   background-color: var(--white-background);
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid var(--accent);
   background: var(--white-background);
   width: calc((100% - 2 * 24px) / 3);
 }
 
 .portf-underimg-text {
   padding: 32px 16px;
-
+  border: 1px solid var(--accent);
+  border-top: none;
 }
 
 .portf-subtitle {
   margin-bottom: 8px;
 }
-
-
