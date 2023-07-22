@@ -74,6 +74,7 @@ img {
   background-color: var(--white-background);
   border-bottom: 1px solid var(--accent);
   background: var(--white-background);
+  padding: 25px 0;
 }
 
 .header-navigation {
@@ -84,9 +85,11 @@ img {
 .header-menu-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0 24px;
-}
   
+}
+ .header-menu-link {
+padding: 24px 0 24px;
+ } 
 .header-soc-list {
   display: flex;
   gap: 40px;
