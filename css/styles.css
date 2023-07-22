@@ -79,12 +79,15 @@ img {
 .header-navigation {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 
 .header-menu-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
+}
+
+.header-menu-item {
   padding: 24px 0;
 }
 
@@ -113,7 +116,7 @@ img {
   text-decoration: none;
 }
 
-.logo link {
+.logo-link {
   display: block;
   margin-right: 76px;
 }
@@ -175,7 +178,7 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
-  min-width: 496px;
+  max-width: 496px;
 }
 
 .hero-btn {
@@ -309,12 +312,10 @@ text-align: center;
 
 .footer {
   background-color: var(--dark);
-  padding-top: 101.5px;
-  padding-bottom: 100px;
 }
 
 .footer-wrap {
-  padding: 100px o;
+  padding: 100px 0;
 }
 
 .footer-link {
